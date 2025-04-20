@@ -5,12 +5,11 @@ import { defineConfig } from 'vite'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
-    base: '/House/',
     build: {
         rollupOptions: {
             input: {
                 main: resolve(__dirname, 'index.html'),
-                nested: resolve(__dirname, ''),
+                // nested: resolve(__dirname, 'nested/index.html'),
             },
         },
     },
