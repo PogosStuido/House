@@ -1,0 +1,56 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.header {
+
+    &__logo-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        min-height: 65px;
+    }
+
+    &__logo-text {
+        font-weight: 700;
+        font-size: 20px;
+        color: $dark-green;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $light-green;
+        min-height: 65px;
+        padding: 0 15px;
+
+        a {
+            width: 24px;
+            height: 24px;
+
+            .burger,
+            .basket {
+                width: 100%;
+            }
+        }
+
+        a:focus {
+            background-color: $buttons-color;
+
+            .burger,
+            .basket {
+                color: $dark-green;
+            }
+        }
+
+        a:active {
+
+            .burger,
+            .basket {
+                color: $buttons-color-active;
+            }
+        }
+
+    }
+
+}

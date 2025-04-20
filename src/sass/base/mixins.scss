@@ -1,0 +1,10 @@
+@use "/src/sass/base/variables.scss" as *;
+
+@mixin button {
+    border: 1px solid $dark-green;
+    width: 154px;
+    height: 50px;
+    font-weight: 500;
+    font-size: 18px;
+    color: $dark-green;
+}
